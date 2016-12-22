@@ -1,0 +1,17 @@
+<GuiXml>
+    <Controls>
+        <Button name="SC_ChatWindowMinBarOptions" mouseOverBlendMode="ADD" inherits="ZO_ButtonBehaviorClickSound">
+            <Dimensions x="32" y="32" />
+            <Anchor point="BOTTOMLEFT" relativeTo="ZO_ChatWindowMinBarMaximize" relativePoint="TOPLEFT" offsetX="0" offsetY="7"/>
+            <Textures
+                    normal="EsoUI/Art/ChatWindow/chat_options_up.dds"
+                    pressed="EsoUI/Art/ChatWindow/chat_options_down.dds"
+                    mouseOver="EsoUI/Art/ChatWindow/chat_options_over.dds"
+            />
+
+            <OnClicked>
+                ZO_ChatSystem_ShowOptions(self:GetParent())
+            </OnClicked>
+        </Button>
+    </Controls>
+</GuiXml>
